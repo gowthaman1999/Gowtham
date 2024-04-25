@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- about-us-206:40-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>AM-Wall painting</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awosome.css">
+
+    <link rel="stylesheet" href="assets/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="p-wrapper">
+            <div class="spinner">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header-area">
+        <div class="container">
+            <div class="paint-nav nav-fixed">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="assets/images/AM Logo.png" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <ul class="navbar-nav hp-1-nav ml-auto mt-2">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service-2.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us-2.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact-us.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal animated fadeIn" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content e-m-contents">
+                <div class="modal-body">
+                    <button type="button" class="close es-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="card estimate-card es-card-2">
+                        <span class="flaticon-paint esc-paint"></span>
+                        <h2>Get An Estimate</h2>
+                        <article class="card-body">
+                            <form>
+                                <span class="e-ctl"> 1. What are the wall dimensions?</span>
+                                <div class="form-row pt-2">
+                                    <div class="col form-group">
+                                        <label>Height (m) </label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wd-height"
+                                            required>
+                                    </div>
+                                    <div class="col form-group">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wd-width"
+                                            required>
+                                    </div>
+                                </div>
+                                <span class="e-ctl">2. What are the dimensions of the windows/areas
+                                    that you don't want to cover in metres?</span>
+                                <div class="form-row pt-2">
+                                    <div class="form-group col">
+                                        <label>Height (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wnd-height"
+                                            value="00.00">
+                                    </div>
+                                    <div class="form-group col">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wnd-width"
+                                            value="00.00">
+                                    </div>
+                                </div>
+                                <span class="e-ctl">3. What are the dimensions of the doors
+                                    that you don't want to cover in metres?</span>
+                                <div class="form-row pt-2">
+                                    <div class="form-group col">
+                                        <label>Height (m)</label>
+                                        <input type="text" class="form-control" placeholder="0" id="doord-height"
+                                            value="00.00">
+                                    </div>
+                                    <div class="form-group col">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0" id="doord-width"
+                                            value="00.00">
+                                    </div>
+                                </div>
+                                <span class="e-ctl">4. How many coats of paint do you want?</span>
+                                <div class="form-group p-2">
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="1"
+                                            checked>
+                                        <span class="form-check-label"> 1 coat</span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="2">
+                                        <span class="form-check-label"> 2 coat</span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="3">
+                                        <span class="form-check-label"> 3 coat</span>
+                                    </label>
+                                </div>
+                                <div class="e-result">
+                                    <div class="e-tottle me-tottle">
+                                        <h3 id="litre-result">00.00</h3>
+                                        <span>litres of paint</span>
+                                    </div>
+                                    <div class="er-text">
+                                        <p>This is based on a coverage of
+                                            <span id="mitresquireperlitre">12</span>m² per litre of paint. Always
+                                            check the coverage on the side
+                                            of the tin before buying.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn-block ebtn" id="estimate-btn">Get Estimate
+                                        Now</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn-block ebtn-r" id="estimate-reset-btn">Reset
+                                        Estimate</button>
+                                </div>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="service-area">
+        <div class="container">
+            <div class="row">
+                <h1 class="wow zoomIn" data-wow-delay=".5s">About Us</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="About-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="team-image">
+                        <img src="assets/images/project/fotor_2023-3-22_11_6_21.jpg" alt="">
+                        <div class="n-of-members">
+                            <div class="t-members">
+                                <span class="cap-m"><span class="counterUp">100</span>+</span>
+                                <p>Dedicated
+                                    Works</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="colo-content ab-us" data-wow-delay=".3s">
+                        <div class="p">
+                            <h2 class="wow zoomIn" data-wow-delay=".5s">We Are Dedicated
+                                In Our Work!</h2>
+                            <br>
+                            <h4 class="wow zoomIn" data-wow-delay=".5s">"SYED IBRAHIM" has been Dedicatedly
+                                Providing Painting Services for 20
+                                years.</h4>
+                            <br>
+
+                            <p class="wow zoomIn" data-wow-delay=".5s"> For people like me, book are
+                                something solid and real, whereas
+                                digital stuff is
+                                a
+                                bit more ethereal. I like the trophy on my shelf, the presence in my home. A nice
+                                book
+                                is just as valuable.
+                            </p>
+                            <p class="wow zoomIn" data-wow-delay=".5s"> Let's face it, a hell of a lot
+                                more useful. For people
+                                like me, book are something solid and real where
+                                digital stuff is a bit more ethereal. For people.</p>
+                        </div>
+
+                        <div class="btn-learn">
+                            <span class="learn-ab"><a class="wow zoomIn" data-wow-delay=".5s" href="service-2.html">Our
+                                    Services</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wepaint-thecolor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="colo-content">
+                        <h1 class="wow zoomIn" data-wow-delay=".5s">AM-Happy Wall Painting</h1>
+                        <br>
+                        <h2 class="wow zoomIn">Colors You Will Love And
+                            Willing To Use!</h2>
+                        <h5 class="wow zoomIn">For people like me, book are something solid and
+                            real, whereas digital stuff is a bit more ethereal.
+                            I like the trophy on my shelf, the presence in my
+                            home. A nice book is just as valuable.</h5>
+                        <br><br>
+                        <h5 class="wow zoomIn">Let's face it, a hell of a lot more useful. For people
+                            like me, book are something solid and real where
+                            digital stuff is a bit more ethereal. For people like
+                            me, book are something solid and.</h5>
+                        <div class="btn-learn" class="wow zoomIn">
+                            <span class="learn-ab"><a href="portfolio.html">Portfolio</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="color-image wow zoomIn" data-wow-delay=".3s">
+                        <img src="assets/images/color.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br>
+
+    <section class="service">
+        <div class="container">
+            <div class="paints-service">
+                <div class="row">
+                    <div class="col-md-4 mt-5">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".5s">
+                            <span class="flaticon-paint ficon-bg-1"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-paint"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>OUR VISION</h3>
+                                <p>Our vision in painting is to push the boundaries of traditional painting techniques
+                                    and styles, and to experiment with new forms of expression. We strive to create
+                                    works that are both innovative and meaningful, that challenge the viewer's
+                                    perception of what art can be.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="single-service ss-2 wow fadeInUp" data-wow-delay="1s">
+                            <span class="flaticon-paint-1 ficon-bg-2"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-paint-1"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>OUR MISSION</h3>
+                                <p>In addition to creating meaningful works of art, we also see it as our mission to
+                                    share our passion for painting with others. As such, we offer classes and workshops
+                                    to help people develop their own artistic skills and to encourage them to explore
+                                    their own creative potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="single-service wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-paint-roller ficon-bg-3"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-paint-roller"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>OUR GOALS</h3>
+                                <p>To achieve these goals, we are committed to creating works of art that are
+                                    emotionally engaging. We believe that the most powerful paintings are those that
+                                    connect with viewers on a deep and that inspire them to think critically about the
+                                    world around them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="project-ask">
+        <div class="container">
+            <div class="pro-ask-content">
+                <h1 data-aos="slide-in-left">We Are Happy To Acess You</h1>
+                <p>I loved painting and drawing for many reasons. One of them was that all it really required was
+                    me, a
+                    pencil and a pad. It was something I was passionate about, and still am I loved painting.</p>
+                <div class="btn-contact wow zoomIn" data-wow-delay=".5s">
+                    <span class="con-btn"><a href="Contact-us.html">Let's Talk</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subscribe-top">
+                        <div class="sp-logo">
+                            <img src="assets/images/logo (1).png" alt="">
+                        </div>
+                        <div class="sp-subscription-form">
+                            <div class="sp-input">
+                                <h4>chat with us</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control sp-in" placeholder="+91 8682007005"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='+91 8682007005'"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">lets talk</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <a class="footer" href="#"><img src="assets/images/AM Logo.png" alt="" width="100px"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-company">
+                            <h4>About Us</h4>
+                            <p>Let us together create the new building of the future
+                                which will be everything in one form: architecture
+                                and sculpture and painting. The greatest advances
+                                of civilization, whether in architecture.</p>
+                            <p>Painting or painting, science literature, in industry or
+                                agriculture, have never come from.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <h4>Services</h4>
+                            <ul class="single-footer-widget">
+                                <li><a href="#">Wall Painting</a></li>
+                                <li><a href="#">Commercial Painting</a> </li>
+                                <li><a href="#">House Painting</a></li>
+                                <li><a href="#">Normal Painting</a></li>
+                                <li><a href="#">Interior Arts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <h4>Company</h4>
+                            <ul class="single-footer-widget">
+                                <li><a href="about-us-2.html">About Us</a></li>
+                                <li><a href="Contact-us.html">Contacts</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="service-2.html">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <p class="copyright">© copyright - 2023 <strong><a href="index.html">AM Happy WallPainting</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="copyleft">Powered by &nbsp&nbsp <strong><a href="https://brandzspot.com/"><img
+                                src="assets/images/BRANDZ.png" alt="Brandz" width="100px"></a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/countdown.js"></script>
+
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <script src="assets/js/shuffle.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+
+</html>

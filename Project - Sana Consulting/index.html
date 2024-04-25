@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sana Consulting - Best Construction in Company</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+       #unique-social-icons 
+       {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+       }
+
+    #unique-social-icons a {
+  display: block;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  color:#888788;
+}
+
+#unique-social-icons a:last-child {
+  margin-bottom: 0;
+}
+
+#unique-social-icons a:hover {
+  transform: translate(-5px);
+  color: #f88123;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border" style="width: 3rem; height: 3rem; color:#888788" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="p-2 me-2">
+                        <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 125px; height: 60px;">
+                    </div>
+                </a>
+                <button class="btn navbar-toggler my-3 mx-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link mx-3 mt-2">Home</a>
+                        <a href="#service" class="nav-item nav-link mx-3 mt-2">Services</a>
+                        <a href="#about" class="nav-item nav-link mx-3 mt-2">About</a>
+                        <a href="#project" class="nav-item nav-link mx-3 mt-2">Project</a>
+                        <a href="#team" class="nav-item nav-link mx-3 mt-2">Testimonial</a>
+                        <a href="#contact" class="nav-item nav-link mx-3 mt-2">Contact</a>
+                    </div>
+                    <button class="btn my-3 mx-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="background: #f88123; color: white; font-family: 'Elsie Swash Caps', cursive;">Get Quotes</button>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <div class="modal fade mt-4" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel" style="font-family: 'Elsie Swash Caps', cursive; color:#f88123">Get in Touch</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="mail1.php" method="post">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="name" class="form-control m-2" placeholder="Your Name" style="height: 55px;" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" name="mail" class="form-control m-2" placeholder="Your Email" style="height: 55px;" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="phone" class="form-control m-2" placeholder="Your Phone" style="height: 55px;" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="subject" class="form-control m-2" placeholder="Subject" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control m-2" name="message" rows="3" placeholder="Message" required></textarea>
+                                </div>
+                                    <center><button class="btn" style="color: white; background-color: #080708;" type="submit" name="submit">Request A Quote</button></center>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">Welcome To <b style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;">Sana Consulting</b>
+                    <h1 class="display-5 animated fadeIn mb-4" style="color: #080708;">Find A <span style="color:#f88123; font-family: 'Elsie Swash Caps', cursive;">Perfect Home</span> To Live With <span style="font-family: 'Elsie Swash Caps', cursive;">Your Family</span></h1>
+                    <p class="animated fadeIn mb-4 pb-2">
+                        <i class="fa-solid fa-house-circle-check mx-2" style="color:#f88123"></i>We will help you to determine your must-haves.<br>
+                        <i class="fa-solid fa-house-circle-check mx-2" style="color:#f88123"></i>We will help you to determine your budget.<br>
+                        <i class="fa-solid fa-house-circle-check mx-2" style="color:#f88123"></i>We will help you to Choose the right location.<br>
+                        <i class="fa-solid fa-house-circle-check mx-2" style="color:#f88123"></i>We will help you to check the property’s condition for you<br>
+                        <i class="fa-solid fa-house-circle-check mx-2" style="color:#f88123"></i>We will help you to determine your budget & we will help you with the long-term investment</p>
+                    <a href="#service" class="btn btn-md py-3 px-5 me-3 animated fadeIn" style="background: #f88123; color: white; font-family: 'Elsie Swash Caps', cursive;"><b>Get Started</b></a>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Search Start -->
+        <div class="container-fluid mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px; background: #f88123;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-12">
+                        <form action="mail.php" method="post">
+                            <div class="row g-2">
+                                <div class="col-md-2">
+                                    <input type="text"  name="name" class="form-control border-0 py-3" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text"  name="mobile" class="form-control border-0 py-3" placeholder="Your Phone" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text"  name="mail" class="form-control border-0 py-3" placeholder="Your Mail" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-select border-0 py-3" name="type">
+                                        <option disabled selected>Property Type</option>
+                                        <option value="For Rent">For Rent</option>
+                                        <option value="For Lease">For Lease</option>
+                                        <option value="For Buy">For Buy</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-select border-0 py-3" name="loc">
+                                        <option disabled selected>Location</option>
+                                        <option value="Coimbatore">Coimbatore</option>
+                                        <option value="Nilgiris">Nilgiris</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn border-0 w-100 py-3" style="background: #080708; color: #fff; font-family: ;">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End --> 
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5" id="service">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3" style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;">We serve Innovations</h1>
+                    <p>Our House-design team & Construction team is dedicated to bringing your vision to life, with personalized attention every step of the way.</p>
+                </div>
+                <div class="row g-4">                    
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3">
+                            <div class="rounded p-4">
+                                <div class="mb-3">
+                                    <img class="img-fluid icon" src="img/land.jpg" alt="Icon">
+                                </div>
+                                <h6 style="color:#080708">Land Consulting</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3">
+                            <div class="rounded p-4">
+                                <div class="mb-3">
+                                    <img class="img-fluid icon" src="img/buildings.jpg" alt="Icon">
+                                </div>
+                                <h6 style="color:#080708">Building Consulting</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3">
+                            <div class="rounded p-4">
+                                <div class="mb-3">
+                                    <img class="img-fluid icon" src="img/survey.jpg" alt="Icon">
+                                </div>
+                                <h6 style="color:#080708">Survey Plan Approval</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3">
+                            <div class="rounded p-4">
+                                <div class="mb-3">
+                                    <img class="img-fluid icon" src="img/property.jpg" alt="Icon">
+                                </div>
+                                <h6 style="color:#080708">Property management</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/about.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4" style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;" >Why Choose Us ?</h1>
+                        <p class="mb-4">We are expertise and experience to handle our project efficiently and effectively. Our project will be completed with the highest level of attention to detail. We value open communication and collaboration, and we are dedicated to work closely with clients to bring their vision to life, this can be a significant differentiator. Our Consultancy able to offer unique solutions and design options that set you apart from the competition, this can be a compelling reason our clients to choose our services. We have a solid reputation for delivering high-quality work and building strong relationship with clients.</p>
+                        <p><i class="fa-solid fa-swatchbook me-3" style="color: #f88123;"></i>Best Design</p>
+                        <p><i class="fa-solid fa-medal me-3" style="color: #f88123;"></i>Best Quality</p>
+                        <p><i class="fa-solid fa-clock me-3" style="color: #f88123;"></i>Delivery in Time</p>
+                        <div class="change">
+                            <!--<p>
+                                <i class="fa-solid fa-eye me-1 mt-4" style="color: #888788; font-size: 30px;"></i><b><span style="color: #888788; font-size: 30px;">Vision</span></b> - Building a better future.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bullseye me-1" style="color: #888788; font-size: 30px;"></i><b><span style="color: #888788; font-size: 30px;">Mission</span></b> - We are committed to delivering high-quality, sustainable construction projects that exceed our clients' expectations.
+                            </p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Property List Start -->
+        <div class="container-xxl py-5" id="project">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3" style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;">Our Projects</h1>
+                            <p>"The best way to predict your future is to create it"<br>Some of our Projects are,</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-warning mt-2" style="border-color: #f88123;" data-bs-toggle="pill" href="#tab-1">Ongoing kothagiri</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-warning mt-2" style="border-color: #f88123;" data-bs-toggle="pill" href="#tab-1">Ready to Move</a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn btn-outline-warning mt-2" style="border-color: #f88123;" data-bs-toggle="pill" href="#tab-1">Under Construction</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/1.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Site View</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Scenic Swedish Homes</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">10Km from</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color:#f88123"></i>Kotagiri, Tamilnadu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Design</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Ground Floor</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">10Km from</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color:#f88123;"></i>Kotagiri, Tamilnadu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Site View</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Sprawling Estate</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">10Km from</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Kotagiri, Tamilnadu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/6.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Site View</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Day & Night View</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">10Km from</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Kotagiri, Tamilnadu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/4.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Design</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">First Floor</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">10Km from</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Kotagiri, Tamilnadu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/5.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Site View</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Club Sevenska</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">10Km from</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Kotagiri, Tamilnadu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Readt to Move</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Readt to Move</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Readt to Move</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Readt to Move</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Ready to Move</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Readt to Move</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Under Construction</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Under Construction</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Under Construction</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Under Construction</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Under Construction</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3" style="background-color: #f88123; font-family: 'Elsie Swash Caps', cursive; color: white;">Under Construction</div>
+                                        <div class="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3" style="color: #f88123;">Individual Villas</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="mb-3" style="color: #080708;">35 Lakhs</h5>
+                                        <p><i class="fa fa-map-marker-alt me-2" style="color: #f88123;"></i>Pannimadai, Coimbatore</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined me-2" style="color: #f88123;"></i>1000 Sqft</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed me-2" style="color: #f88123;"></i>3 Bed</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath me-2" style="color: #f88123;"></i>2 Bath</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property List End -->
+
+
+        <!-- Call to Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(248, 129, 35, .3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3" style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;">Need A Free Quote? <br> Feel Free to Contact Us</h1>
+                                </div>
+                                <a href="https://wa.me/9047534844?text=I%20Need%20Some%20Details%20!" target="_blank" class="btn py-3 px-4 me-2 mt-3" style="background-color: #888788; color:white;"><i class="fa fa-phone-alt me-2"></i>Make A Call</a>
+                                
+                                <button class="btn py-3 px-4 mt-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="color: white; background-color: #f88123;"><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action End -->
+
+
+        <div class="modal fade mt-4" id="pop" aria-hidden="true" aria-labelledby="popLabel" tabindex="1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel" style="font-family: 'Elsie Swash Caps', cursive; color:#f88123"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="450" height="350" src="https://www.youtube.com/embed/7NR6ynPG08Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade mt-4" id="pop2" aria-hidden="true" aria-labelledby="pop2Label" tabindex="1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel" style="font-family: 'Elsie Swash Caps', cursive; color:#f88123"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="450" height="350" src="https://www.youtube.com/embed/9OMiut1Kj20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5" id="team">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3" style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;">Video Gallery</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <a data-bs-target="#pop" data-bs-toggle="modal">
+                           <div class="bg-white border rounded p-4">
+                            <img src="img/01.jpg" alt="video feedback">
+                            <div class="d-flex align-items-center mt-3">
+                                <!--<img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1" style="color: #080708;">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>-->
+                            </div>
+                           </div>
+                        </a>
+                    </div>
+                    
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <a data-bs-target="#pop2" data-bs-toggle="modal"><div class="bg-white border rounded p-4">
+                            <img src="img/02.jpg" alt="video feedback">
+                            <div class="d-flex align-items-center mt-3">
+                                <!--<img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1" style="color: #080708;">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>-->
+                            </div>
+                        </div></a>
+                    </div>
+
+                    <!--<div class="testimonial-item bg-light rounded p-3">
+                        <a data-bs-target="#pop" data-bs-toggle="modal"><div class="bg-white border rounded p-4">
+                            <img src="img/03.jpg" alt="video feedback">
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1" style="color: #080708;">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3" style="color: #f88123; font-family: 'Elsie Swash Caps', cursive;">Our Clients Say!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>I had approached Ar.Sathish for my house elevation. He first took all my requirements and was able to deliver that to the next level, Which is really fantastic.</p>
+                            <div class="d-flex align-items-center">
+                                
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1" style="color: #080708;">- Nizar</h6>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Absolutely loved the work.. room turned out exactly like what we expected.. Service top notch.. All in all totally satisfied !!</p>
+                            <div class="d-flex align-items-center">
+                                
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1" style="color: #080708;">- Victor</h6>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Excellent designs and on time and exact execution of design.Totally satisfied with the services.Highly recommended.</p>
+                            <div class="d-flex align-items-center">
+                                
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1" style="color: #080708;">- Gowthaman</h6>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" id="contact" style="background: #f88123;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                            <img class="img-fluid mt-5" src="img/logo.png" alt="Icon" style="width: 165px; height: 80px;">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-4" style="color: #fff; font-family: 'Elsie Swash Caps', cursive;">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Gandhipuram, Coimbatore</p>
+                        <a href="https://wa.me/9047534844?text=I%20Need%20Some%20Details%20!" target="_blank" style="text-decoration: none; color: #fbc091" ><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 90475 34844</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 88833 77038</p></a>
+                        <a href="mailto:support@sana-consulting.in" style="text-decoration: none; color: #fbc091"><p class="mb-2"><i class="fa fa-envelope me-3"></i>support@sana-consulting.in</p></a>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="mb-4" style="color: #fff; font-family: 'Elsie Swash Caps', cursive;">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="#about">About Us</a>
+                        <a class="btn btn-link text-white-50" href="#project">Project</a>
+                        <a class="btn btn-link text-white-50" href="#service">Our Services</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sana_consulting_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/SanaConsulting" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <!--<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>-->
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC4aUSyYYBcX19d5BiAD1MOg"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                           2023 Copyrights &copy; <a class="border-bottom" href="#">Sana Consulting</a>, All Right Reserved.
+                        </div>
+                        <div class="col-md-4 text-center text-md-end">
+                        </div>
+                        <!--<div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                           <center>Powered By <a href="http://brandzspot.com" target="_blank"><img src="img/blogo.png" width="110" height="20"></a></center>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top" style="background-color: #888788; color: white;"><i class="bi bi-arrow-up"></i></a>
+
+        <div id="unique-social-icons">
+            <!--<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>-->
+            <a href="https://www.instagram.com/sana_consulting_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/SanaConsulting" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC4aUSyYYBcX19d5BiAD1MOg" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

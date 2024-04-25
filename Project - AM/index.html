@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- index-206:27-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>AM- Happy Wall Painting</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awosome.css">
+
+    <link rel="stylesheet" href="assets/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="p-wrapper">
+            <div class="spinner">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-area">
+        <div class="container">
+            <div class="paint-nav nav-fixed">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="assets/images/AM Logo.png" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <ul class="navbar-nav hp-1-nav ml-auto mt-2">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service-2.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us-2.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact-us.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal animated fadeIn" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content e-m-contents">
+                <div class="modal-body">
+                    <button type="button" class="close es-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="card estimate-card es-card-2">
+                        <span class="flaticon-paint esc-paint"></span>
+                        <h2>Get An Estimate</h2>
+                        <article class="card-body">
+                            <form>
+                                <span class="e-ctl"> 1. What are the wall dimensions?</span>
+                                <div class="form-row pt-2">
+                                    <div class="col form-group">
+                                        <label>Height (m) </label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wd-height"
+                                            required>
+                                    </div>
+                                    <div class="col form-group">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wd-width"
+                                            required>
+                                    </div>
+                                </div>
+                                <span class="e-ctl">2. What are the dimensions of the windows/areas
+                                    that you don't want to cover in metres?</span>
+                                <div class="form-row pt-2">
+                                    <div class="form-group col">
+                                        <label>Height (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wnd-height"
+                                            value="00.00">
+                                    </div>
+                                    <div class="form-group col">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wnd-width"
+                                            value="00.00">
+                                    </div>
+                                </div>
+                                <span class="e-ctl">3. What are the dimensions of the doors
+                                    that you don't want to cover in metres?</span>
+                                <div class="form-row pt-2">
+                                    <div class="form-group col">
+                                        <label>Height (m)</label>
+                                        <input type="text" class="form-control" placeholder="0" id="doord-height"
+                                            value="00.00">
+                                    </div>
+                                    <div class="form-group col">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0" id="doord-width"
+                                            value="00.00">
+                                    </div>
+                                </div>
+                                <span class="e-ctl">4. How many coats of paint do you want?</span>
+                                <div class="form-group p-2">
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="1"
+                                            checked>
+                                        <span class="form-check-label"> 1 coat</span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="2">
+                                        <span class="form-check-label"> 2 coat</span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="3">
+                                        <span class="form-check-label"> 3 coat</span>
+                                    </label>
+                                </div>
+                                <div class="e-result">
+                                    <div class="e-tottle me-tottle">
+                                        <h3 id="litre-result">00.00</h3>
+                                        <span>litres of paint</span>
+                                    </div>
+                                    <div class="er-text">
+                                        <p>This is based on a coverage of
+                                            <span id="mitresquireperlitre">12</span>m² per litre of paint. Always
+                                            check the coverage on the side
+                                            of the tin before buying.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn-block ebtn" id="estimate-btn">Get Estimate
+                                        Now</button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn-block ebtn-r" id="estimate-reset-btn">Reset
+                                        Estimate</button>
+                                </div>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="hero-area">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="wow zoomIn" data-wow-delay=".5s">We Really Love to Help You to
+                    Get Your Home Decorated!</h1>
+                <p class="wow zoomIn" data-wow-delay="1s" data-aos="fade">"Art is not just a thing; with every purchase,
+                    the buyer also
+                    receives a piece of your creative sprit"</p>
+                <div class="btn-contact">
+                    <span class="con-btn"><a href="Contact-us.html">Contact Us</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="paints-service">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".5s">
+                            <span class="flaticon-paint ficon-bg-1"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-paint"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>WALL PAINTING</h3>
+                                <p>Are you pondering over picking the perfect wall paint for your beautiful home? Well,
+                                    we have got you covered. Since the market
+                                    is flooded with different wall paints.
+                                </p>
+                                <a href="service-2.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service ss-2 wow fadeInUp" data-wow-delay="1s">
+                            <span class="flaticon-paint-1 ficon-bg-2"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-paint-1"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>WALL DECORATING</h3>
+                                <p>We will help you to finishing element that can help pull a space together and make it
+                                    feel complete. It is that little extra touch that should grace the pages of an
+                                    interior
+                                    design magazine.</p>
+                                <a href="service-2.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-paint-roller ficon-bg-3"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-paint-roller"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>REGULAR PAINTING</h3>
+                                <p>A great novel concerned primarily with
+                                    the interior lives its characters as they
+                                    respond the inconvenient narratives
+                                    that fate imposes ono them adaptations
+                                    these monumental fictions often fail.</p>
+                                <a href="service-2.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service ss-2 wow fadeInUp" data-wow-delay=".5s">
+                            <span class="flaticon-pantone ficon-bg-1"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-pantone"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>FLOOR COATING</h3>
+                                <p>We are providing floor coatings with protective layers in applications
+                                    where heavy surface or corrosion is expected. Typical applications include
+                                    warehouses, chemical plants, and manufacturing floors.</p>
+                                <a href="service-2.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service wow fadeInUp" data-wow-delay="1s">
+                            <span class="flaticon-art ficon-bg-5"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-art"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>ART PAINTING</h3>
+                                <p><b>*Unique:compare to others. *Original:Quality of products
+                                        *Exquisite:Beauty of our arts in each piece *Timeless:Gurantee of your timings
+                                        and *Investment:Trust to be invest us. We are happy to access you.</b>.</p>
+                                <a href="service-2.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service ss-2 wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-graphic-tool ficon-bg-6"></span>
+                            <div class="icon-inner">
+                                <span class="flaticon-graphic-tool"></span>
+                            </div>
+                            <div class="ss-content">
+                                <h3>CRAFT DESIGNING</h3>
+                                <p>We are designing and making of individual artefacts and objects, encouraging the
+                                    development of intellectual, creative and visual sensitivity and a
+                                    working knowledge of tools and materials.</p>
+                                <a href="service-2.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+                    <div class="about wow fadeInRight" data-wow-delay=".3s">
+                        <div class="ab-ficon">
+                            <span class="flaticon-paint-3 ficon-ab-1"></span>
+                        </div>
+                        <div class="au-tittle">
+                            <p>About Us</p>
+                            <h2>Doing Painting is Our Big Passion</h2>
+                        </div>
+                        <p> We are a leading provider of high-quality paints and coatings for both residential and
+                            commercial use. Our company has been in the paint industry for over years and we take
+                            pride in our commitment to excellence and innovation.</p>
+                        <p> we are passionate about paint and dedicated to providing our customers with the best
+                            possible experience. Whether you're a homeowner, contractor, or designer, we have the paints
+                            and coatings you need to bring your vision to life. Contact us today to learn more about our
+                            products and services!</p>
+                        <div class="btn-learn">
+                            <span class="learn-ab"><a href="about-us-2.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="completed-project">
+        <div class="container">
+            <div class="recent-top">
+                <h4>Recent Works</h4>
+                <h3>Our Recent Completed Works</h3>
+            </div>
+            <div class="recent-project">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/WhatsApp Image 2023-03-20 at 2.37.41 PM.jpeg" alt="">
+                            <div class="prj-1-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1"></span>
+                                </div>
+                                <h4>Colorful Door Art!</h4>
+                                <p>This is one of our colorful door painting Art,we are more dedicated to work with
+                                    this. Doors make the first impression as soon as anyone enters your home. Doors have
+                                    often been neglected as a part of interior decor.</p>
+                                <a href="portfolio.html"> View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/portfolio/WhatsApp Image 2023-03-20 at 2.37.07 PM.jpeg" alt="">
+                            <div class="prj-1-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1"></span>
+                                </div>
+                                <h4>Colorful Final Touch!</h4>
+                                <p>This is our one of the final finish, where house painting is concerned,
+                                    one of the
+                                    prime objectives is to ensure that the paint remains bonded to its substrate and
+                                    that it retains its essential properties for as long as possible</p>
+                                <a href="portfolio.html"> View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/portfolio/WhatsApp Image 2023-03-20 at 2.37.04 PM (1).jpeg" alt="">
+                            <div class="prj-1-content ">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-2"></span>
+                                </div>
+                                <h4>Colorful Design!</h4>
+                                <p class="final">Thin coatings applied to surfaces in a liquid form.Dries and becomes
+                                    flexible solids. Have many uses, the protection of the
+                                    surface from sunlight, dampness, dust and weathering. Provide easily
+                                    cleanable surfaces that helps keep the substrates clean and tidy.</p>
+                                <a href="portfolio.html">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/WhatsApp Image 2023-03-20 at 2.37.15 PM.jpeg" alt="">
+                            <div class="prj-1-content ">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Interior Work!</h4>
+                                <p>We are providing the most cost effective and quickest home improvement. You can
+                                    transform the look of a room or your entire house just by using paint! With the
+                                    right colors, the feel of a room can change completely and become a more enjoyable
+                                    living space.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/portfolio/Portfolio-08.jpg" alt="">
+                            <div class="prj-1-content ">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Wall Art!</h4>
+                                <p>This is one of our colorfull wall art. One popular style of wall painting is mural
+                                    art. Wall painting can be a beautiful and creative way to enhance your living space.
+                                    With a wide range of styles and techniques to choose from, you can create a unique
+                                    and personalized look.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/WhatsApp Image 2023-03-20 at 2.37.01 PM.jpeg" alt="">
+                            <div class="prj-1-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Exterior Art!</h4>
+                                <p>As we mentioned that this type of paint is durable and provides a glossy finish. It
+                                    helps to protect the metal from rust and corrosion.We are proud to be work with
+                                    these kind of oil art. We are using Oil-based
+                                    paint,Enamel paint,Acrylic paint and Powder coating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="client-content">
+                        <h3 data-aos="zoom-in">Clients Feedbacks</h3>
+                        <div class="testimo-slide">
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                                <div class="carousel-inner">
+
+                                    <div class="item active carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“Painting is fantastic, exactly what I wanted. Shipping was very
+                                                    prompt, good value and the item was well packaged. Thanks AM-Wall
+                                                    Painting!”</p>
+                                                <h5>--Shaqueel--</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“Beautiful painting, beautifully wrapped with a lovely personal note
+                                                    from artist. Couldn’t be happier! ”</p>
+                                                <h5>--Rahul--</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>"Elemental Balance very happy in its new home. Dreadful photo but you
+                                                    get the gist. Thanks AM-Wall painting"</p>
+
+                                                <h5>--Vincent--</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-nav">
+                                    <a data-slide="prev" href="#quote-carousel"
+                                        class="left carousel-control btn-prev"><i class="fa fa-chevron-left"></i></a>
+                                    <a data-slide="next" href="#quote-carousel"
+                                        class="right carousel-control btn-next"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-one wow fadeInUp" data-wow-delay=".5s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Painting is an illusion, a
+                            piece of magic, so what
+                            you see is not.</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Tag: Painting</li>
+                            </ul>
+                        </div>
+                        <p>Do activities you passionate about which
+                            make your heart and soul perky including
+                            things like working out cooking, painting
+                            writing, yoga, hiking, walking.</p>
+                        <div class="btn-learn-2">
+                            <span class="learn-li"><a href="">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one wow fadeInUp" data-wow-delay="1s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Understanding Color Theory:</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Tag: Painting</li>
+                            </ul>
+                        </div>
+                        <p>This section can delve into the science of color and how it influences painting. It can cover
+                            topics such as the color wheel, color temperature, color harmony, and more.</p>
+                        <div class="btn-learn-2">
+                            <span class="learn-li"><a href="">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Materials and Tools:</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Tag: Painting</li>
+                            </ul>
+                        </div>
+                        <p>This section can provide an overview of the various materials and tools used in painting,
+                            such as paints, brushes, canvases, and more. It can also discuss the different types of
+                            paint, such as oil, acrylic, watercolor, and others.</p>
+                        <div class="btn-learn-2">
+                            <span class="learn-li"><a href="">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-two wow fadeInUp" data-wow-delay=".5s">
+                        <img src="assets/images/project/WhatsApp Image 2023-03-20 at 2.29.02 PM.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one wow fadeInUp" data-wow-delay="1s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Techniques and Methods:</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Tag: Painting</li>
+                            </ul>
+                        </div>
+                        <p>This section can describe various techniques and methods used in painting, such as glazing,
+                            impasto, wet-on-wet, and more. It can also provide step-by-step tutorials on how to use
+                            these techniques</p>
+                        <div class="btn-learn-2">
+                            <span class="learn-li"><a href="">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Critiquing Your Own Work:</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Tag: Painting</li>
+                            </ul>
+                        </div>
+                        <p>This section can provide guidance on how to critique your own paintings, such as how to
+                            identify areas that need improvement, how to analyze composition and color choices, and
+                            more.</p>
+                        <div class="btn-learn-2">
+                            <span class="learn-li"><a href="">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project-ask">
+        <div class="container">
+            <div class="pro-ask-content">
+                <h1 data-aos="slide-in-left">We Are Happy To Access You</h1>
+                <p>I loved painting and drawing for many reasons. One of them was that all it really required was me, a
+                    pencil and a pad. It was something I was passionate about, and still am I loved painting.</p>
+                <div class="btn-contact wow zoomIn" data-wow-delay=".5s">
+                    <span class="con-btn"><a href="Contact-us.html">Let's Talk</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subscribe-top">
+                        <div class="sp-logo">
+                            <img src="assets/images/logo (1).png" alt="">
+                        </div>
+                        <div class="sp-subscription-form">
+                            <div class="sp-input">
+                                <h4>chat with us</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control sp-in" placeholder="+91 8682007005"
+                                        onfocus="this.placeholder=''" onblur="this.placeholder='+91 8682007005'"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">lets talk</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <a class="footer" href="#"><img src="assets/images/AM Logo.png" alt="" width="100px"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-company">
+                            <h4>About Us</h4>
+                            <p>Let us together create the new building of the future
+                                which will be everything in one form: architecture
+                                and sculpture and painting. The greatest advances
+                                of civilization, whether in architecture.</p>
+                            <p>Painting or painting, science literature, in industry or
+                                agriculture, have never come from.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <h4>Services</h4>
+                            <ul class="single-footer-widget">
+                                <li><a href="#">Wall Painting</a></li>
+                                <li><a href="#">Commercial Painting</a> </li>
+                                <li><a href="#">House Painting</a></li>
+                                <li><a href="#">Normal Painting</a></li>
+                                <li><a href="#">Interior Arts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <h4>Company</h4>
+                            <ul class="single-footer-widget">
+                                <li><a href="about-us-2.html">About Us</a></li>
+                                <li><a href="Contact-us.html">Contacts</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="service-2.html">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <p class="copyright">© copyright - 2023 <strong><a href="index.html">AM Happy WallPainting</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="copyleft">Powered by &nbsp&nbsp <strong><a href="https://brandzspot.com/"><img
+                                src="assets/images/BRANDZ.png" alt="Brandz" width="100px"></a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/countdown.js"></script>
+
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <script src="assets/js/shuffle.js"></script>
+
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
